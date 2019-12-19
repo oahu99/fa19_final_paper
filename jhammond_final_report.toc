@@ -1,0 +1,5 @@
+\contentsline {section}{\numberline {1}Motivation for the Augmented Listening Project}{2}% 
+\contentsline {section}{\numberline {2}Current Hardware Platform}{2}% 
+\contentsline {subsection}{\numberline {2.1}FPGA}{2}% 
+\contentsline {subsubsection}{\numberline {2.1.1}I2S}{2}% 
+\contentsline {subsubsection}{\numberline {2.1.2}DMA Controller and Buffers}{3}% 
