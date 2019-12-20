@@ -3,3 +3,7 @@
 \contentsline {subsection}{\numberline {2.1}FPGA}{2}% 
 \contentsline {subsubsection}{\numberline {2.1.1}I2S}{2}% 
 \contentsline {subsubsection}{\numberline {2.1.2}DMA Controller and Buffers}{3}% 
+\contentsline {subsubsection}{\numberline {2.1.3}Filtering}{4}% 
+\contentsline {subsection}{\numberline {2.2}HPS}{4}% 
+\contentsline {subsubsection}{\numberline {2.2.1}Linux}{4}% 
+\contentsline {subsubsection}{\numberline {2.2.2}Recording and Processing}{4}% 

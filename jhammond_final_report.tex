@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage{graphicx}
+
 \author{John Hammond}
 \title{TE 401 Final Presentation FA19}
 
@@ -41,11 +42,12 @@ Our array prototypes have all consisted of MEMS mcirophones, which send their bi
 We chose these microphones because they are very cheap and easy to prototype with. Two microphones share a sample\
 clock, right/left select clock, power, and a data line. The right and left channel alternate sending thier 16\
 bit samples. These samples are then pieced together at the I2S master into a coherent right and left data\
-stream. These master cores are implemented in the FPGA fabric. Refer to figure \ref{i2s_timing} for an example of\
+stream. These master cores are implemented in the FPGA fabric. Refer to figure\
+\ref{i2s_timing} for an example of\
 a typical I2S data transfer.
 
-\begin{figure}[h]
-	\includegraphics[scale=.5]{i2s_timing.png}
+\begin{figure}[ht]
+	\includegraphics[scale=.5]{pictures/i2s_timing.png}
 	\centering
 	\caption{I2S timing diagram (wikipedia citation needed)}
 	\label{i2s_timing}
@@ -54,10 +56,56 @@ a typical I2S data transfer.
 \newpage
 
 \subsubsection{DMA Controller and Buffers}
-Recording audio from a large number of microphones is a challenge and is one of the features of our\
-open platform. There is 7.68 Mbit of space allocated in memory for the samples from each of the 10\
-microphones. Each of the five I2S masters hold the lastest valid 16-bit sample for each microphone\
-on its output register. 
+Recording audio from a large number of microphones is a challenge and is one of the\
+features of our\
+open platform. There is 7.68 Mbit of space allocated in memory for the samples from\
+each of the 10\
+microphones. Each of the five I2S masters hold the latest valid 16-bit sample for each\
+microphone on its output register. The DMA controller then iterates through these 10\
+registers and writes their values to the proper memory address.  These data transfers\
+are all done over the Avalon\textsuperscript{\textregistered{}} bus. \
 
+Figure \ref{dma_sim} shows the activity on the\
+Avalon\textsuperscript{\textregistered{}} bus while the DMA controller is running.\
+The microphone sample data is asserted on the AM\_WRITEDATA line.  The address of each\
+sample is asserted on the AM\_ADDR line.  The DMA controller cycles through these\
+addresses while recording, as seen in the sequence of 0x1000024, 0x01753024,\
+0x01EA6024, 0x025F9024, and 0x02D4C024. The write enable signal AM\_WRITE stays high\
+for the duration of these transfers.
+
+\begin{figure}[ht]
+	\begin{center}
+	\includegraphics[scale=.4]{pictures/sim_close.png}
+	\caption{Simulation of DMA access}
+	\label{dma_sim}
+	\end{center}
+\end{figure}
+
+\subsubsection{Filtering}
+Real time signal processing can be performed in the FPGA fabric using hardware logic.\
+Altera\textsuperscript{\textregistered{}} provides FIR filters as part of their\
+university program.  
+
+\subsection{HPS}
+
+\subsubsection{Linux}
+The hard processor system is based on two ARM Cortex-A9 cores.  On this processor we\ are running a lightweight GNU/Linux distribution to handle low level hardware control.\
+File I/O, ftp, ssh, and ethernet controls are made very easy using the HPS as opposed\
+to pure hardware logic. Altera\textsuperscript{\textregistered{}}'s provided OS image\
+can be put on a microSD card and booted at power on.
+
+\subsubsection{Recording and Processing}
+On top of our Linux system we have a small C++ program to read samples from the DDR3\
+buffer and store it or process it.  This is the second part of the recording process\
+after the DDR3 buffers have been completely filled out by the DMA controller.\
+This piece of code actually works similarly to the DMA in hardware just in\
+reverse. Altera\textsuperscript{\textregistered{}} provides libraries with their HPS\
+development environment to make the HPS interface nicer with the FPGA fabric.\
+Specifically, the current recording program uses the mmap function to map the\
+FPGA memory mapped addresses to addresses in the GNU/Linux userspace. These\
+addresses are dereferenced in the C++ program to access the FPGA's hardware\
+registers. This is more complex than using a soft core such as a RISC-V core\
+or a ZipCPU because the hard processor cannot be reconfigured for any different\
+hardware configuration.
 
 \end{document}
