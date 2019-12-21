@@ -1,0 +1,22 @@
+\begin{thebibliography}{1}
+
+\bibitem{i2s}
+``{I}2{S} - {W}ikiwand.'' \url{https://www.wikiwand.com/en/I%C2%B2S}.
+\newblock (Accessed on 12/21/2019).
+
+\bibitem{avalon}
+``{A}valon {I}nterface {S}pecifications.''
+  \url{https://www.intel.com/content/www/us/en/programmable/documentation/nik1412467993397.html}.
+\newblock (Accessed on 12/21/2019).
+
+\bibitem{mmap}
+``Embedded linux beginners guide | documentation | rocketboards.org.''
+  \url{https://rocketboards.org/foswiki/Documentation/EmbeddedLinuxBeginnerSGuide}.
+\newblock (Accessed on 12/21/2019).
+
+\bibitem{veripool}
+``{I}ntro - {V}erilator - {V}eripool.''
+  \url{https://www.veripool.org/wiki/verilator}.
+\newblock (Accessed on 12/21/2019).
+
+\end{thebibliography}

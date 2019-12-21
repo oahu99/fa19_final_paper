@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.12.9)  19 DEC 2019 18:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.19)  21 DEC 2019 01:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**/home/john/School/TE_401/fa19_final_paper/jhammond_final_report.tex
-(/home/john/School/TE_401/fa19_final_paper/jhammond_final_report.tex
+**jhammond_final_report
+(./jhammond_final_report.tex
 LaTeX2e <2018-12-01>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -138,55 +138,189 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 3.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 5.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 5.
 )
 \tf@toc=\write3
 \openout3 = `jhammond_final_report.toc'.
 
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
 Overfull \hbox (16.25629pt too wide) in paragraph at lines 15--15
 []\OT1/cmr/bx/n/14.4 Motivation for the Aug-mented Lis-ten-ing Project 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 28.
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
-<pictures/i2s_timing.png, id=11, 642.4pt x 196.735pt>
+<pictures/i2s_timing.png, id=13, 642.4pt x 196.735pt>
 File: pictures/i2s_timing.png Graphic file (type png)
 <use pictures/i2s_timing.png>
 Package pdftex.def Info: pictures/i2s_timing.png  used on input line 50.
 (pdftex.def)             Requested size: 321.19922pt x 98.36725pt.
- [2]
-<pictures/sim_close.png, id=18, 851.18pt x 384.43625pt>
+
+LaTeX Warning: Citation `i2s' on page 2 undefined on input line 52.
+
+[2]
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <7> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 58.
+<pictures/avalon.png, id=18, 495.2904pt x 225.4824pt>
+File: pictures/avalon.png Graphic file (type png)
+<use pictures/avalon.png>
+Package pdftex.def Info: pictures/avalon.png  used on input line 70.
+(pdftex.def)             Requested size: 247.64459pt x 112.74092pt.
+
+
+LaTeX Warning: Citation `avalon' on page 3 undefined on input line 74.
+
+[3 <./pictures/i2s_timing.png> <./pictures/avalon.png (PNG copy)>]
+<pictures/sim_close.png, id=25, 851.18pt x 384.43625pt>
 File: pictures/sim_close.png Graphic file (type png)
 <use pictures/sim_close.png>
-Package pdftex.def Info: pictures/sim_close.png  used on input line 78.
-(pdftex.def)             Requested size: 340.46596pt x 153.77177pt.
- [3 <./pictures/i2s_timing.png> <./pictures/sim_close.png>] [4] (./jhammond_fin
-al_report.aux) ) 
+Package pdftex.def Info: pictures/sim_close.png  used on input line 100.
+(pdftex.def)             Requested size: 323.45175pt x 146.08728pt.
+<pictures/mmap.png, id=26, 669.50125pt x 507.8975pt>
+File: pictures/mmap.png Graphic file (type png)
+<use pictures/mmap.png>
+Package pdftex.def Info: pictures/mmap.png  used on input line 139.
+(pdftex.def)             Requested size: 254.41312pt x 193.00305pt.
+
+
+LaTeX Warning: Citation `mmap' on page 4 undefined on input line 140.
+
+[4 <./pictures/sim_close.png>] [5 <./pictures/mmap.png (PNG copy)>]
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 171.
+<pictures/signaltap.png, id=34, 1252.68pt x 605.1408pt>
+File: pictures/signaltap.png Graphic file (type png)
+<use pictures/signaltap.png>
+Package pdftex.def Info: pictures/signaltap.png  used on input line 196.
+(pdftex.def)             Requested size: 350.748pt x 169.43826pt.
+
+Overfull \hbox (5.748pt too wide) in paragraph at lines 196--198
+ [] 
+ []
+
+[6 <./pictures/signaltap.png (PNG copy)>]
+<pictures/verilator.png, id=40, 256.96pt x 200.75pt>
+File: pictures/verilator.png Graphic file (type png)
+<use pictures/verilator.png>
+Package pdftex.def Info: pictures/verilator.png  used on input line 218.
+(pdftex.def)             Requested size: 128.47968pt x 100.37474pt.
+
+
+LaTeX Warning: Citation `veripool' on page 7 undefined on input line 219.
+
+<pictures/threads.png, id=41, 389.455pt x 178.6675pt>
+File: pictures/threads.png Graphic file (type png)
+<use pictures/threads.png>
+Package pdftex.def Info: pictures/threads.png  used on input line 225.
+(pdftex.def)             Requested size: 272.61664pt x 125.06639pt.
+
+LaTeX Warning: Citation `veripool' on page 7 undefined on input line 226.
+
+[7 <./pictures/verilator.png> <./pictures/threads.png>]
+<pictures/myblock.png, id=48, 834.11626pt x 272.01625pt>
+File: pictures/myblock.png Graphic file (type png)
+<use pictures/myblock.png>
+Package pdftex.def Info: pictures/myblock.png  used on input line 248.
+(pdftex.def)             Requested size: 250.2368pt x 81.6055pt.
+ [8 <./pictures/myblock.png>] (./jhammond_final_report.bbl
+! Undefined control sequence.
+l.4 ``{I}2{S} - {W}ikiwand.'' \url
+                                  {https://www.wikiwand.com/en/I%C2%B2S}.
+? R
+OK, entering \nonstopmode...
+
+Underfull \hbox (badness 7667) in paragraph at lines 4--6
+[]\OT1/cmr/m/n/10 ``I2S - Wiki-wand.'' https://www.wikiwand.com/en/I (Ac-cessed
+ on
+ []
+
+! Undefined control sequence.
+l.9   \url
+          {https://www.intel.com/content/www/us/en/programmable/documentatio...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (258.02916pt too wide) in paragraph at lines 8--11
+[]\OT1/cmr/m/n/10 ``Avalon In-ter-face Spec-i-fi-ca-tions.'' https://www.intel.
+com/content/www/us/en/programmable/documentation/nik1412467993397.html.
+ []
+
+! Undefined control sequence.
+l.14   \url
+           {https://rocketboards.org/foswiki/Documentation/EmbeddedLinuxBegi...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (35.34813pt too wide) in paragraph at lines 13--16
+\OT1/cmr/m/n/10 https://rocketboards.org/foswiki/Documentation/EmbeddedLinuxBeg
+innerSGuide.
+ []
+
+! Undefined control sequence.
+l.19   \url
+           {https://www.veripool.org/wiki/verilator}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.22 \end{thebibliography}
+                          
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+) [9] (./jhammond_final_report.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1470 strings out of 492615
- 21436 string characters out of 6131390
- 85096 words of memory out of 5000000
- 5382 multiletter control sequences out of 15000+600000
- 7895 words of font info for 28 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 41i,9n,25p,330b,248s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on jhammond_final_report.pdf (4 pages, 133048 bytes).
+ 1523 strings out of 492671
+ 22213 string characters out of 6134269
+ 84963 words of memory out of 5000000
+ 5416 multiletter control sequences out of 15000+600000
+ 9647 words of font info for 34 fonts, out of 8000000 for 9000
+ 1137 hyphenation exceptions out of 8191
+ 41i,10n,27p,284b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy7.pfb>
+Output written on jhammond_final_report.pdf (9 pages, 981891 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 32 compressed objects within 1 object stream
+ 92 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
