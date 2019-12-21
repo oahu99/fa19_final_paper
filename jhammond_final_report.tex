@@ -1,5 +1,11 @@
 \documentclass{article}
 \usepackage{graphicx}
+\usepackage{url}
+\usepackage[backend=biber]{biblatex}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+
+\addbibresource{jhammond_final_report.bib}
 
 \author{John Hammond}
 \title{TE 401 Final Presentation FA19}
@@ -38,9 +44,9 @@ The FPGA is programmed to receive I2S data, store samples in DDR3 memory buffers
 signal processing cores.  We will mostly describe the hardware as it relates to recording.
 
 \subsubsection{I2S}
-Our array prototypes have all consisted of MEMS mcirophones, which send their bitstream over the I2S bus.\
+Our array prototypes have all consisted of MEMS microphones, which send their bit stream over the I2S bus.\
 We chose these microphones because they are very cheap and easy to prototype with. Two microphones share a sample\
-clock, right/left select clock, power, and a data line. The right and left channel alternate sending thier 16\
+clock, right/left select clock, power, and a data line. The right and left channel alternate sending their 16\
 bit samples. These samples are then pieced together at the I2S master into a coherent right and left data\
 stream. These master cores are implemented in the FPGA fabric. Refer to figure\
 \ref{i2s_timing} for an example of\
@@ -302,7 +308,6 @@ designs. In conclusion, we had a very productive semester with significant\
 progress towards speeding up development times, and we will be spending\
 more time working on hardware features next semester.
 
-\bibliography{jhammond_final_report}
-\bibliographystyle{ieeetr}
+\printbibliography
 
 \end{document}

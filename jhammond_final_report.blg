@@ -1,46 +1,15 @@
-This is BibTeX, Version 0.99d (TeX Live 2019)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: jhammond_final_report.aux
-The style file: ieeetr.bst
-Database file #1: jhammond_final_report.bib
-You've used 4 entries,
-            1876 wiz_defined-function locations,
-            489 strings with 3954 characters,
-and the built_in function-call counts, 470 in all, are:
-= -- 48
-> -- 4
-< -- 0
-+ -- 4
-- -- 0
-* -- 14
-:= -- 55
-add.period$ -- 8
-call.type$ -- 4
-change.case$ -- 4
-chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 16
-empty$ -- 73
-format.name$ -- 0
-if$ -- 129
-int.to.chr$ -- 0
-int.to.str$ -- 4
-missing$ -- 0
-newline$ -- 19
-num.names$ -- 0
-pop$ -- 32
-preamble$ -- 1
-purify$ -- 0
-quote$ -- 0
-skip$ -- 12
-stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 5
-write$ -- 34
+[0] Config.pm:304> INFO - This is Biber 2.12
+[0] Config.pm:307> INFO - Logfile is 'jhammond_final_report.blg'
+[24] biber:315> INFO - === Sat Dec 21, 2019, 16:13:15
+[45] Biber.pm:371> INFO - Reading 'jhammond_final_report.bcf'
+[108] Biber.pm:889> INFO - Found 4 citekeys in bib section 0
+[121] Biber.pm:4093> INFO - Processing section 0
+[131] Biber.pm:4254> INFO - Looking for bibtex format file 'jhammond_final_report.bib' for section 0
+[132] bibtex.pm:1512> INFO - LaTeX decoding ...
+[140] bibtex.pm:1329> INFO - Found BibTeX data source 'jhammond_final_report.bib'
+[158] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[158] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[158] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[158] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[165] bbl.pm:636> INFO - Writing 'jhammond_final_report.bbl' with encoding 'UTF-8'
+[166] bbl.pm:739> INFO - Output to jhammond_final_report.bbl

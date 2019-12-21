@@ -1,22 +1,62 @@
-\begin{thebibliography}{1}
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
 
-\bibitem{i2s}
-``{I}2{S} - {W}ikiwand.'' \url{https://www.wikiwand.com/en/I%C2%B2S}.
-\newblock (Accessed on 12/21/2019).
 
-\bibitem{avalon}
-``{A}valon {I}nterface {S}pecifications.''
-  \url{https://www.intel.com/content/www/us/en/programmable/documentation/nik1412467993397.html}.
-\newblock (Accessed on 12/21/2019).
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{avalon}{misc}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labeltitlesource}{title}
+      \field{note}{(Accessed on 12/21/2019)}
+      \field{title}{{A}valon {I}nterface {S}pecifications}
+      \verb{urlraw}
+      \verb https://www.intel.com/content/www/us/en/programmable/documentation/nik1412467993397.html
+      \endverb
+      \verb{url}
+      \verb https://www.intel.com/content/www/us/en/programmable/documentation/nik1412467993397.html
+      \endverb
+    \endentry
+    \entry{mmap}{misc}{}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://rocketboards.org/foswiki/Documentation/EmbeddedLinuxBeginnerSGuide}}
+      \field{note}{(Accessed on 12/21/2019)}
+      \field{title}{Embedded Linux Beginners Guide | Documentation | RocketBoards.org}
+    \endentry
+    \entry{i2s}{misc}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.wikiwand.com/en/I2S}}
+      \field{note}{(Accessed on 12/21/2019)}
+      \field{title}{I²S - Wikiwand}
+    \endentry
+    \entry{veripool}{misc}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.veripool.org/wiki/verilator}}
+      \field{note}{(Accessed on 12/21/2019)}
+      \field{title}{{I}ntro - {V}erilator - {V}eripool}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
 
-\bibitem{mmap}
-``Embedded linux beginners guide | documentation | rocketboards.org.''
-  \url{https://rocketboards.org/foswiki/Documentation/EmbeddedLinuxBeginnerSGuide}.
-\newblock (Accessed on 12/21/2019).
-
-\bibitem{veripool}
-``{I}ntro - {V}erilator - {V}eripool.''
-  \url{https://www.veripool.org/wiki/verilator}.
-\newblock (Accessed on 12/21/2019).
-
-\end{thebibliography}

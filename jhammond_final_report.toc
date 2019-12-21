@@ -1,16 +1,33 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Motivation for the Augmented Listening Project}{2}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}Current Hardware Platform}{2}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1}FPGA}{2}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.1.1}I2S}{2}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.1.2}Avalon\textsuperscript {\textregistered {}} Bus}{3}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.1.3}DMA Controller and Buffers}{3}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2}HPS}{4}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.2.1}Linux}{4}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.2.2}Recording and Processing}{4}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Going Forward}{6}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1}SignalTap\textsuperscript {\textregistered {}} and its Flaws}{6}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2}Software Simulation and Verilator}{7}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.2.1}Co-Simulation Interface}{7}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3}Continuous Recording}{8}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4}Replacing Altera\textsuperscript {\textregistered {}} Code}{9}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Conclusion}{9}% 
