@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2019.12.9)  21 DEC 2019 16:13
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2019.12.9)  21 DEC 2019 16:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -663,7 +663,7 @@ File: pictures/mmap.png Graphic file (type bmp)
 File: pictures/signaltap.png Graphic file (type bmp)
 <pictures/signaltap.png>
 
-Overfull \hbox (5.71901pt too wide) in paragraph at lines 202--204
+Overfull \hbox (5.71901pt too wide) in paragraph at lines 205--207
  [] 
  []
 
@@ -676,26 +676,20 @@ File: pictures/threads.png Graphic file (type bmp)
 File: pictures/myblock.png Graphic file (type bmp)
 <pictures/myblock.png>
  [8]
-Overfull \hbox (66.84pt too wide) in paragraph at lines 312--312
+Overfull \hbox (66.84pt too wide) in paragraph at lines 315--315
 [][][][][] [] [] [] [][][][][][][][][][][][] [] [][][] [] [][][][][][][] [] [][
 ][][][][][][][][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][]
 []$\TU/LatinModernRoman(0)/m/n/10 .
  []
 
 
-Overfull \hbox (0.7133pt too wide) in paragraph at lines 312--312
+Overfull \hbox (0.7133pt too wide) in paragraph at lines 315--315
 []\TU/LatinModernRoman(0)/m/it/10 Intro - Verilator - Veripool\TU/LatinModernRo
 man(0)/m/n/10 . $[][][][][] [] [] [] [][][] [] [][][][][][][][] [] [][][] [] []
 [][][] [] [][][][][][][][][]$.
  []
 
 [9] (./jhammond_final_report.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please rerun LaTeX.
-
 Package logreq Info: Writing requests to 'jhammond_final_report.run.xml'.
 \openout1 = `jhammond_final_report.run.xml'.
 
@@ -703,10 +697,10 @@ Package logreq Info: Writing requests to 'jhammond_final_report.run.xml'.
 Here is how much of TeX's memory you used:
  19244 strings out of 492912
  406728 string characters out of 6134893
- 851625 words of memory out of 5000000
+ 851733 words of memory out of 5000000
  23178 multiletter control sequences out of 15000+600000
  535290 words of font info for 60 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 39i,6n,67p,827b,4533s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,6n,67p,827b,4532s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on jhammond_final_report.pdf (9 pages).

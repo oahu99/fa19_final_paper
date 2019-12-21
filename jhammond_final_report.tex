@@ -88,7 +88,7 @@ Recording audio from a large number of microphones is a challenge and is one of 
 features of our\
 open platform. There is 7.68 Mbit of space allocated in memory for the samples from\
 each of the 10\
-microphones. Each of the five I2S masters hold the latest valid 16-bit sample for each\
+microphones. Each of the four I2S masters holds the latest valid 16-bit sample for each\
 microphone on its output register. The DMA controller then iterates through these 10\
 registers and writes their values to the proper memory address.  These data transfers\
 are all done over the Avalon\textsuperscript{\textregistered{}} bus. \
@@ -137,7 +137,7 @@ FPGA memory mapped addresses to addresses in the GNU/Linux userspace. These\
 addresses are dereferenced in the C++ program to access the FPGA's hardware\
 registers. This is more complex than using a soft core such as a RISC-V core\
 or a ZipCPU because the hard processor cannot be reconfigured for each\
-new hardware configuration. Figure \ref{mmap} shows an example embeded\
+new hardware configuration. Figure \ref{mmap} shows an example embedded\
 GNU/Linux memory map.
 
 \begin{figure}[ht]
@@ -164,9 +164,11 @@ the buffers and storing them to the microSD card. Figure \ref{dma_sim} shows the
 control signals labeled as AVL\_*.
 
 Software digital signal processing on the HPS is another feature of our platform\
-that will be useful for prototyping algorithms. The HPS does not have the same\
-performance as dedicated hardware signal processing, but it is useful for prorotyping\
-quick algorithms. This is especially useful because signal processing on personal\
+geared towards prototyping algorithms. The HPS does not have the same\
+performance as dedicated hardware signal processing, which limits its real time\
+signal processing abilities. That being said, it is still useful for prototyping\
+quick algorithms. This part of our platform is especially important\
+because signal processing on personal\
 computers is complicated by input drivers and operating system quirks.
 
 \section{Going Forward}
@@ -179,7 +181,8 @@ The development of our current system has been done exclusively on the actual\
 development board. SignalTap\textsuperscript{\textregistered{}} is the main tool\
 used for debugging on the board. SignalTap\textsuperscript{\textregistered{}} works\
 by instantiating a logic analyzer on the FPGA and sending the captures back to\
-the computer over USB. Figure \ref{signaltap} shows a capture of recording on\
+the computer over USB. Figure \ref{signaltap} shows a capture of the recording\
+process on\
 our physical board, the same signals seen in figure \ref{dma_sim}. This is a\
 useful tool for doing final verification on the board, but it is cumbersome\
 to use for rapid prototyping and developing new algorithms.\
@@ -216,26 +219,26 @@ that can then be stimulated by auxiliary\
 C++ code. Inputs and outputs of the design are exposed as public variables\
 in the object. These can be stimulated by flipping bits individually and clocking\
 the design in a similar way to ModelSim\textsuperscript{\textregistered}. However,\
-the real power of Verilator is running C++ programs along wrapped around the\
-design to inteligently stimulate the inputs; this is known as ``co-simulation''.\
+the real power of Verilator is running C++ programs wrapped around the\
+design to intelligently stimulate the inputs; this is known as ``co-simulation''.\
 
 \begin{figure}[ht]
 	\begin{center}
 	\includegraphics[scale=.5]{pictures/verilator.png}
-	\caption{''Verilator, the fastest free Verilog HDL simulator'' \cite{veripool}}
+	\caption{``Verilator, the fastest free Verilog HDL simulator'' \cite{veripool}}
 	\end{center}
 \end{figure}
 
 \begin{figure}[ht]
 	\begin{center}
 	\includegraphics[scale=.7]{pictures/threads.png}
-	\caption{Verilator creates highly threaded code \cite{veripool}}
+	\caption{Verilator performance scales with more threads\cite{veripool}}
 	\end{center}
 \end{figure}
 
 \subsubsection{Co-Simulation Interface}
 To effectively simulate the hard processor and the dedicated FPGA hardware logic\
-ou co-simulation interface must support both an avalon bus master, slave, and an\
+our co-simulation interface must support both an avalon bus master, slave, and an\
 I2S master. The I2S master simulates the microphone data stream, which is a\
 relatively simple sim routine. The hard processor is harder to simulate. Obviously\
 we cannot fully simulate the hard cores because ARM HDL files\
